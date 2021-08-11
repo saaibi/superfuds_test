@@ -1,58 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+import Header from './features/header';
+import Product from './features/product';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+      <Header />
+      <img width="11%" height="10%" alt="logo" src='https://ci3.googleusercontent.com/proxy/JFN-KBAPmn-hYvn2A9_6J_7QpS8NkA28rwD-1M5CHgui37DVfMJFV-6T4rGwrKRtmcH_VwXw7emrdb42toXF23NOG6fNYyObFyGTod7ePmQtBgoepH9PXW33d9aqLQClkLiIt3IO7cYhvs1rQ1eJ1unag8CSKzJVGns7LofTDEIEx3YC2SMBs3y4fx6yyVBM6EZ32uQ54PfElJpw9Q=s0-d-e1-ft#https://docs.google.com/uc?export=download&id=1HVtiGVz7Owmw0_fcORCT5zt6GMSYplUE&revid=0BxtFoSn2HvlHVHhnRXN2eGRFWERxV1VMVUpJOHorVStUeE9rPQ' />
+      <Product />
     </div>
   );
 }
-
-export default App;
